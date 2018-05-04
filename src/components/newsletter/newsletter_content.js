@@ -4,7 +4,7 @@ class NewsletterContent extends Component {
 
     renderItem() {
         if(this.props.latestItem) {
-            return(
+            return (
                 <div>
                     <div>
                         <img src={this.props.latestItem.imageUrl}/>
@@ -27,4 +27,4 @@ class NewsletterContent extends Component {
     }
 }
 
-export default NewsletterContent;
+export default NewsletterContent
