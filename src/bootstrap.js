@@ -15,6 +15,7 @@ import './style/main.scss';
 //our components
 import Signin from  './components/auth/signin';
 import Signup from './components/auth/signup';
+import Newsletter from './components/newsletter/newsletter';
 
 
 function main() {
@@ -25,6 +26,7 @@ function main() {
             <Switch>
               <Route path="/signin" component={Signin}></Route>
               <Route path="/signup" component={Signup}></Route>
+              <Route path="/newsletter" component={Newsletter}></Route>
             </Switch>
         </Header>
       </BrowserRouter>
