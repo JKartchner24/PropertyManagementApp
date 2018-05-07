@@ -32,4 +32,4 @@ class NewsletterContent extends Component {
     }
 }
 
-export default NewsletterContent;
+export default NewsletterContent

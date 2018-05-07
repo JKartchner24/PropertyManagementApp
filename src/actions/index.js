@@ -45,7 +45,6 @@ export function saveNewsletterEdit({title, body}, _id, callback) {
             headers: { authorization: localStorage.getItem('token') }
         }) 
             .then(response => {
-                
                 dispatch(fetchNewsletterArchive(() => {
                     callback()
                 }))
