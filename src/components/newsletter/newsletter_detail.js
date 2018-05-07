@@ -8,12 +8,13 @@ class NewsletterDetail extends Component {
         this.props.fetchNewsletterById(this.props.match.params._id)
     }
 
-    renderFetchItem() {
+    
+    renderFetchedItem() {
         if(this.props.fetchedItem) {
             return (
                 <div>
                     <div>
-                        <img src = {this.props.fetchedItem.imageUrl}/>
+                        <img src={this.props.fetchedItem.imageUrl}/>
                         <h2>{this.props.fetchedItem.title}</h2>
                     </div>
                     <p>
@@ -23,7 +24,6 @@ class NewsletterDetail extends Component {
             )
         }
     }
-
 
     render() {
         return (
