@@ -10,9 +10,9 @@ class SupportRequest extends Component {
                     <div>Add Request</div>
                     <div className="row">
                         <div className="col-md-3">
-                            <InfoBox type='pending'/>
-                            <InfoBox type='in-pending'/>
-                            <InfoBox type='complete'/>
+                            <InfoBox type="pending"/>
+                            <InfoBox type="in-progress"/>
+                            <InfoBox type="complete"/>
                         </div>
                         <div className="col-md-9">
                             support request content component - contains UL

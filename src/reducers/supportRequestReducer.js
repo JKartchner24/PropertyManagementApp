@@ -1,7 +1,6 @@
-import {
+import { 
     SELECT_REQUEST_TYPE
-} from '../actions/types';
-import { selectRequestType } from '../../actions';
+} from "../actions/types";
 
 const INITIAL_STATE = {
     selected: 'pending'
@@ -15,6 +14,6 @@ export default function(state = INITIAL_STATE, action) {
                 ...state,
                 selected
             }
-        default: return state; 
+        default: return state;
     }
 }

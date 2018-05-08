@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as actions from '../actions'; 
+import * as actions from '../actions';
 
 class InfoBox extends Component {
 
@@ -11,9 +11,9 @@ class InfoBox extends Component {
 
     render() {
         return (
-            <div className='info-box'>
+            <div className="info-box">
                 <a onClick={() => this.handleSelected()}>
-                the type of this InfoBox is {this.props.type}
+                    the type of this InfoBox is {this.props.type}
                 </a>
             </div>
         )
