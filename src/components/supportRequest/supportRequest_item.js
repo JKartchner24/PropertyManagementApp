@@ -22,6 +22,9 @@ class SupportRequestItem extends Component {
                 <div>
                     {this.props.date}
                 </div>
+                <Link to={`/support-request/edit/${this.props._id}`}>
+                    <div>{this.props.body}</div>
+                </Link>
             </li>
         ) 
     }
