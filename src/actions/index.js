@@ -3,7 +3,8 @@ import {
     FETCH_NEWSLETTER_BY_ID,
 
     SELECT_REQUEST_TYPE,
-    FETCH_SUPPORT_REQUESTS
+    FETCH_SUPPORT_REQUESTS,
+    FETCH_SUPPORT_REQUEST_BY_ID
 } from './types';
 
 import axios from 'axios';
@@ -67,6 +68,8 @@ export function saveNewsletterEdit({title, body}, _id, callback) {
     }
 }
 
+//
+
 export function saveNewNewsletter({title, body}, callback) {
     return function(dispatch) {
         axios.post(`${ROOT_URL}/newsletter/add`, {title, body}, {
@@ -103,4 +106,13 @@ export function fetchSupportRequests() {
                 })
             })
     }
+}
+
+export function fetchSupportRequestById(_id) {
+    return (
+        {
+            type: FETCH_SUPPORT_REQUEST_BY_ID,
+            payload: _id
+        }
+    )
 }
