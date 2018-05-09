@@ -10,7 +10,7 @@ class SupportRequestContent extends Component {
                 <ul>
                     {
                         this.props.supportRequests.map((object, index) => {
-                            if(this.props.selected == object.stauts) {
+                            if(this.props.selected == object.status) {
                                 return <SupportRequestItem key={index} {...object}/>
                             }
                         })

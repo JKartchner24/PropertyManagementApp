@@ -20,9 +20,9 @@ class EditSupportRequest extends Component {
     }
 
     handleFormSubmit({title, body}) {
-        // this.props.saveSupportRequestById({title, body}, this.props.match.params._id, () => {
-        //     this.props.history.push('/support-request');
-        // })
+        this.props.saveSupportRequestEdit({title, body}, this.props.match.params._id, () => {
+            this.props.history.push('/support-request');
+        })
     }
 
     render() {
@@ -41,9 +41,7 @@ class EditSupportRequest extends Component {
 }
 
 function mapStateToProps(state) {
-
-    return { state }
-    return { initialValues: state.newsletter.fetchedItem } 
+    return { initialValues: state.supportRequest.fetchedItem } 
 }
 
 EditSupportRequest = reduxForm(
