@@ -7,7 +7,7 @@ const addHeader = (Child) => {
                 <div className="main-header">
                     <h1>Welcome to The HOA Manager!</h1>
                     <p>Please login to continue</p>
-                    <Child />
+                    <Child {...this.props} />
                 </div>
             )
         }
