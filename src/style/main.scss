@@ -4,6 +4,7 @@ $color-gray-one: #4D4D4D;
 ul {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 body {
@@ -18,4 +19,5 @@ body {
 @import './addHeaderNav';
 @import './newsletter_content';
 @import './newsletter';
-@import './infoBox'
+@import './infoBox';
+@import './newsletter_archive';
