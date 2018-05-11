@@ -1,3 +1,13 @@
+.action {
+    height: 24px;
+    width: 74px;
+    border: 1px solid $color-gray-one;
+    border-radius: 16px;
+    text-align: center;
+    color: $color-gray-one;
+}
+
+
 .newsletter-content {
     height: 665px;
     width: 961px;
@@ -26,10 +36,6 @@
             font-weight: bold;
             line-height: 50px;
             text-align: center;
-        }
-
-        span {
-
         }
     }
 
