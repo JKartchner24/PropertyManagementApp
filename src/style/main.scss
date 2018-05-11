@@ -12,6 +12,7 @@ ul {
 
 body {
     margin: 39px 140px;
+    font-family: "Encode Sans";
 }
 
 $color-red: #BA0000;
@@ -22,3 +23,4 @@ $color-red: #BA0000;
 @import './signin';
 @import './addHeaderNav';
 @import './newsletter_content';
+@import './newsletter';

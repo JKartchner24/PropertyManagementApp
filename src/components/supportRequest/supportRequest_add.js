@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Field, reduxForm} from 'redux-form';
+import { Field, reduxForm } from 'redux-form';
 import * as actions from '../../actions';
 import { connect } from 'react-redux';
 
@@ -12,12 +12,12 @@ class AddSupportRequest extends Component {
                 <label htmlFor={field.input.name}>{field.input.name}</label>
                 <input className="form-control" {...field.input} />
             </div>
-        )
+        ) 
     }
 
     handleFormSubmit({title, body}) {
-        this.props.saveSupportRequest({title, body}, () =>{
-           this.props.history.push('/support-request');
+        this.props.saveNewSupportRequest({title, body}, () => {
+            this.props.history.push('/support-request');
         })
     }
 
@@ -26,8 +26,8 @@ class AddSupportRequest extends Component {
 
         return (
             <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-                <Field name="title" component={this.renderInput} type="text" />
-                <Field name="body" component={this.renderInput} type="textarea" />
+                <Field name="title" component={this.renderInput} type="text"/>
+                <Field name="body" component={this.renderInput} type="textarea"/>
 
                 <Link to="/support-request"><div>Cancel</div></Link>
                 <button action="submit" className="btn btn-primary">Save</button>

@@ -7,10 +7,10 @@ class Signup extends Component {
     render() {
         return (
             <div>
-            
+   
             </div>
         )
     }
 }
 
-export default addHeaderBorder(addTitle(Signup, "Creart Account"));
+export default addHeaderBorder(addTitle(Signup, 'Create Account'));
