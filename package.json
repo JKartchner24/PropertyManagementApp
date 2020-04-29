@@ -60,7 +60,7 @@
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.29.0",
-    "jquery": "^1.9.1",
+    "jquery": "^3.5.0",
     "macaddress": "^0.2.9",
     "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.6",
