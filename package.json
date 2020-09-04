@@ -62,7 +62,7 @@
     "html-webpack-plugin": "^2.29.0",
     "jquery": "^1.9.1",
     "macaddress": "^0.2.9",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.13.1",
     "postcss-loader": "^2.0.6",
     "react": "^16.2.0",
     "react-dom": "^16.0.0",
